@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>관리자 대시보드 | EduForm</title>
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+  />
+  <!-- Admin CSS -->
+  <link rel="stylesheet" href="css/admin.css" />
+</head>
+<body class="bg-light">
+  <main class="container my-5">
+    <h2 class="board-title mb-4">관리자 대시보드</h2>
+    <ul class="nav nav-tabs mb-4" id="adminTabs" role="tablist">
+      <li class="nav-item"><a class="nav-link" data-tab="users" href="./admin.html">회원 관리</a></li>
+      <li class="nav-item"><a class="nav-link" data-tab="professors" href="./manage_pro.html">교수 관리</a></li>
+      <li class="nav-item"><a class="nav-link" data-tab="students" href="./manage_student.html">학생 관리</a></li>
+      <li class="nav-item"><a class="nav-link active" data-tab="admins" href="./manage_admin.html">관리자 관리</a></li>
+      <li class="nav-item"><a class="nav-link" data-tab="trainingUsers" href="./manage_join_training.html">훈련 참여</a></li>
+      <li class="nav-item"><a class="nav-link" data-tab="recruitUsers" href="./manage_recuit.html">채용 지원</a></li>
+      <li class="nav-item"><a class="nav-link" data-tab="loginLogs" href="./login_log.html">로그인 이력</a></li>
+    </ul>
+    <div id="adminContent"></div>
+  </main>
+
+  <!-- jQuery -->
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJ+Y4V1k27KJPrXcwr8+K+vW3DoZ6pBf5aA0I="
+    crossorigin="anonymous"
+  ></script>
+  <!-- Bootstrap JS Bundle -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+  <!-- Admin JS -->
+  <script src="js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+/* Custom Styles for EduForm Main Page */
+:root {
+    --primary: #ffc107;
+    --dark-bg: #212529;
+    --light-bg: #f8f9fa;
+  }
+  body {
+    padding-top: 0 !important;
+  }
+  /* Navbar */
+  .navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .navbar-brand {
+    font-weight: 700;
+    font-size: 1.7rem;
+    color: var(--primary) !important;
+  }
+  .nav-link {
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  .nav-link:hover {
+    color: var(--primary) !important;
+  }
+  .btn-warning {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    transition: background-color 0.3s;
+  }
+  .btn-warning:hover {
+    background-color: darken(var(--primary), 10%);
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    position: relative;
+    background: url('../img/index_background.png') center/cover no-repeat;
+    height: 100vh; /* 화면 전체 높이로 설정 */
+    overflow: hidden;
+    margin-top: -56px;   /* 네비 높이만큼 뒤로 */
+    padding-top: 56px;   /* 내부 콘텐츠가 가려지지 않도록 */
+  }
+  .hero-section .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0,0,0,0.5);
+  }
+  .hero-section .content {
+    position: relative;
+    z-index: 1;
+  }
+  .hero-section h1 {
+    text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+  }
+  .hero-section .subtext {
+    font-size: 1rem;
+    font-style: italic;
+    color: #ffe082;
+  }
+  
+  /* Footer */
+  footer {
+    border-top: 1px solid #e0e0e0;
+    background-color: var(--light-bg);
+    color: #6c757d;
+  }
+  
+  /* Utility */
+  .text-white { color: #fff !important; }
+  .text-center { text-align: center !important; }
+  

@@ -1,0 +1,55 @@
+:root {
+    --primary: #ffc107;
+  }
+  body {
+    padding-top: 56px;
+  }  
+  body.bg-light {
+    background: #eef2f7;
+  }
+  .navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .navbar-brand {
+    font-weight: 700;
+    font-size: 1.7rem;
+    color: var(--primary) !important;
+  }
+  .nav-link {
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  .nav-link:hover {
+    color: var(--primary) !important;
+  }
+  .btn-warning {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    transition: background-color 0.3s;
+  }
+  .btn-warning:hover {
+    background-color: darken(var(--primary), 10%);
+  }
+
+  .register-card {
+    width: 100%;
+    max-width: 450px;
+    border: none;
+    border-radius: 0.75rem;
+  }
+  .register-card .card-body {
+    padding: 2rem;
+  }
+  .btn-warning {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    transition: background-color 0.3s;
+  }
+  .btn-warning:hover {
+    background-color: #e0a800;
+  }
+  .form-control:focus,
+  .form-select:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.2rem rgba(255,193,7,0.25);
+  }

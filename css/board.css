@@ -1,0 +1,112 @@
+/* css/board.css */
+:root {
+    --primary: #ffc107;    /* yellow */
+    --dark-bg: #212529;    /* navbar bg */
+    --light-bg: #f8f9fa;   /* page bg */
+    --board-primary: #0d6efd; /* board buttons & table accent */
+  }
+  body {
+    padding-top: 56px;
+  }  
+  /* Page background */
+  body.bg-light {
+    background-color: var(--light-bg);
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: var(--dark-bg) !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .navbar-brand {
+    font-weight: 700;
+    font-size: 1.7rem;
+    color: var(--primary) !important;
+  }
+  /* 비활성화된 링크는 연한 회색 */
+  .navbar-nav .nav-link {
+    color: rgba(255,255,255,0.7) !important;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  /* hover 또는 active 된 링크는 노란색 */
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link.active {
+    color: var(--primary) !important;
+  }
+  
+  /* 회원가입 버튼 (topbar) */
+  .btn-warning {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+    transition: background-color 0.3s;
+  }
+  .btn-warning:hover {
+    background-color: rgba(255,193,7,0.8) !important;
+  }
+  
+  /* Board header */
+  .board-title {
+    position: relative;
+    display: inline-block;    /* 언더라인 길이를 제목 너비만큼 제한하려면 inline-block */
+  }
+  
+  .board-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;          /* 제목 바로 아래 */
+    width: 100%;               /* 선 길이 */
+    height: 4px;               /* 선 두께 */
+    background-color: var(--board-primary);
+    border-radius: 2px;
+  }
+  
+  .board-add-btn {
+    background-color: var(--board-primary);
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s;
+  }
+  .board-add-btn:hover {
+    background-color: #0b5ed7;
+  }
+  
+  /* Table wrapper */
+  .board-table-wrapper {
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+  }
+  .board-table {
+    background-color: #fff;
+    margin-bottom: 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+  .board-table th,
+  .board-table td {
+    text-align: center;
+    vertical-align: middle;
+  }
+  .board-table thead th {
+    background-color: var(--board-primary);
+    color: #fff;
+  }
+  .board-table.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(13,110,253,0.05);
+  }
+  .board-table.table-hover tbody tr:hover {
+    background-color: rgba(13,110,253,0.1);
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--light-bg);
+    color: #6c757d;
+    border-top: 1px solid #e0e0e0;
+    font-size: 0.9rem;
+    padding: 1rem 0;
+  }
+  
